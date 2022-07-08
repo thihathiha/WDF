@@ -1,0 +1,97 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Stick&display=swap');
+*/
+
+
+/*Global Font Integrate by Local Folder*/
+@font-face{
+	font-family:Stick;
+	src:local('Stick-Regular'), url('../libs/fonts/stick/Stick-Regular.ttf') format('woff');
+}
+
+@font-face{
+	font-family:aungaung;
+	src:local('AkayaTelivigala-Regular'),url('../libs/fonts/akaya/AkayaTelivigala-Regular.ttf')format('woff');
+}
+
+
+
+/*CDN = Content Deliver Network*/
+/*Global Font Integrate*/
+/*body{
+	font-family:'Stick',sans-serif;
+}*/
+
+.p1{
+	font-family:Stick;
+}
+
+.p2{
+	font-family:aungaung;
+}
+
+.p3{
+	font-family:'Stick',sans-serif;
+}
+
+
+
+
+
+/*Local Font Integrate*/
+/*LM(Local Machine)*/
+/*body{
+	font-family:Century;
+	font-family:'Times New Roman';
+
+}*/
+
+
+
+
+
+	/*font-family:'Stick',sans-seri*/f;
+	/*text-transform:uppercase;*/
+	/*text-transform:lowercase;*/
+	/*text-transform:capitalize;*/
+	/*font-variant:small-caps;*/
+
+	/*Text Indentation*/
+	/*text-indent:50px;*/
+
+	/*font-style:italic;*/
+	/*font-weight:bold;*/
+	/*font-weight:600;*/
+	
+
+
+
+
+/*.p2{
+	font-family:Century;
+}*/
+
+/*.p3{
+	first in first out
+	font-family:Centur,Arial,'Times New Roman';
+}*/
+
+/*100 = thin
+200 = light
+300 = book
+400 = regular
+500 = medium
+600 = semi-bold
+700 = bold
+800 = heavy
+900 = extra-black / poster*/
+
+/*
+art-rules
+@import
+@page
+@media
+@font-face
+@charset
+@namespace
+*/

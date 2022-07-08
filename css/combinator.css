@@ -1,0 +1,19 @@
+div span small.name{
+	color:blue;
+}
+
+div .address{
+	color:red;
+}
+
+div .name .age{
+	color:orange;
+}
+
+.bank .money .currency{
+	color:green;
+}
+
+.container p{
+	color:purple;
+}

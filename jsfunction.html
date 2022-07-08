@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Function</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.box{
+			width: 300px;
+			height: 200px;
+			padding: 10px;
+			background-color: #f4f4f4;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+		}
+		label{
+			display: block;
+			margin-bottom: 5px;
+		}
+		.form-control{
+			width: 100%;
+			display: block;
+			padding: 5px;
+			margin-bottom: 5px;
+		}
+		.btn{
+			width: 100%;
+			font-size: 16px;
+			color:#fff;
+			background-color: darkblue;
+			border:none;
+			padding: 3px;
+
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="box">
+		<h3>Get Name = <span id="fullname">Test</span></h3>
+		<!-- <form action="" method=""> -->
+			<label for="name">Name</label>
+			<input type="text" for="name" name="name" id="name" class="form-control" >
+			<button class="btn" onclick="getdata()">Get Name</button>
+			<br/>
+			<br/>
+			<hr/>
+		<!-- </form> -->
+
+	<script type="text/javascript">
+
+		// 1. Manual Function
+
+		function hello(){
+			document.write("Hello Yangon");
+			document.write("Hello Mandalay");
+			document.write("Hello Bago");
+			document.write("<hr/>");
+		}
+
+		hello();
+
+		function funone(){
+			console.log("i am function one");
+		}
+
+		function funtwo(){
+			console.log("i am function two");
+
+			funone();
+
+			funthree();
+		}
+
+		function funthree(){
+			console.log("i am function three");
+		}
+
+		funtwo();
+
+		function funfour(){
+			console.log(4);
+		}
+
+		function funfive(){
+			console.log(5);
+		}
+
+		function funsix(){
+			const num1 = funfour();
+			const num2 = funfive();
+			console.log(num1);
+			console.log(num2);
+			const total = num1+num2;
+			console.log(total); // (total=NaN (Not a Number))
+		}
+
+		funsix();
+
+		// Note : 1 function 1 return
+
+
+		function funseven(){
+			return 7;
+		}
+
+		// console.log(funseven());
+
+		function funeight(){
+			return 8;
+		}
+
+		// window.alert(funeight());
+
+		function funnine(){
+			const num1 = funseven();
+			const num2 = funeight();
+			// console.log(num1);
+			// console.log(num2);
+			const total = num1+num2;
+			// console.log(total);
+			return total;
+		}
+
+		// funnine();
+
+		console.log(funnine());
+
+// _____________
+	
+
+		// 2. Parameter Function 
+
+		// i. Single Parameter Function
+
+		function myfun1(city){
+			// console.log("Hello " + city);
+			console.log(`Hello ${city}`);
+		}
+
+		myfun1("Yangon");
+		myfun1("Mandalay");
+		myfun1();	
+
+		function myfun2(city="Bago"){     //(Default Parameter)
+			console.log("Hello " + city);
+		}
+
+		myfun2("Yangon");
+		myfun2("Mandalay");
+		myfun2();
+
+// _____________
+	
+		// ii. Multi Parameter Function
+
+		function multifun1(x,y,z){
+			// console.log(`x value is ${x} , y value is ${y} , z value is ${z}`);
+
+			let result = x+y+z;
+			return result; 
+
+			//(number+undefined = Not a number)
+		}
+
+		multifun1(10);
+		multifun1(10,20);
+		multifun1(10,20,30);
+		multifun1(10,20,30,40);
+
+		console.log(multifun1(20,40,60));
+
+		// 3. Constructor function (by String)
+		const confunone = new Function("j","k","l", 'return j+k+l');
+		console.log(confunone(10,20,30));
+		console.log(typeof confunone(10,20,30));
+
+		console.log(confunone("10","20","30"));
+		console.log(typeof confunone("10","20","30"));
+
+		console.log(confunone('kyaw kyaw',' mg mg ','ag ag'));
+
+		// 4. Nameless Function (Annoymous function)
+
+		let annfunone = function(name,color){
+			document.write(`My name is ${name}. I love ${color} color.`);
+		}
+		annfunone('aung aung','black');
+
+		// 5.Self invoking function
+		(function(){
+					console.log('save myanmar');
+				})();
+
+		(function(color){
+						console.log(`my fav color is ${color}`);
+					})('black');
+
+		function getdata(){
+			let getname = document.getElementById('name').value;
+			console.log(getname);
+
+			document.getElementById('fullname').innerText = getname;
+			// document.getElementById('fullname').textContent = getname;
+			// document.getElementById('fullname').innerHTML= getname;
+		}	
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Looping</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		// 1. For Loop
+
+		// for(statement 1; statement 2; statement 3){
+		// 	code to executed;
+		// }
+
+		// global scope
+		let i = 0;
+
+		for(i ; i < 10; i++){
+			console.log(i);
+		}
+
+		console.log("i value is = " + i);
+
+		// for scope
+		for(let j = 5; j <= 10; j++){
+			console.log("j value is = " + j);
+		}
+
+		// if statement in for loop with break & continue
+		// for(let j=0; j < 10; j++){
+
+		// 	if(j===2){
+		// 		console.log("2 is my fav number");
+		// 	}
+
+		// 	console.log(j);
+
+		// }
+
+		// for(let j=0; j < 10; j++){
+
+		// 	if(j===2){
+		// 		console.log("2 is my fav number");
+		// 		break;
+		// 	}
+
+		// 	console.log(j);
+
+		// }
+
+		// for(let j=0; j < 10; j++){
+
+		// 	if(j===2){
+		// 		console.log("2 is my fav number");
+		// 		continue;
+		// 	}
+
+		// 	console.log(j);
+
+		// }
+
+		// for(let j=0; j < 10; j++){
+		// 	if (j === 2) {
+		// 		console.log(j + " is my fav number");
+		// 		continue;
+		// 	}
+
+		// 	if(j === 5){
+		// 		console.log(j + " is Stop the loop");
+		// 		break;
+		// 	}
+
+		// 	console.log(j);
+		// }
+
+		// for(let k = 10; k > 0; k--){
+		// 	console.log("k value is " + k);
+		// }
+
+		// for loop with object
+			const peoples = [
+				{name:'Aung Aung',age:20},
+				{name:'Su Su',age:30},
+				{name:'Hla Hla',age:35}
+		];
+
+		// console.log(peoples);
+		// console.log(peoples[1].name);
+
+		for(let j=0; j < peoples.length; j++){
+			// console.log(j);
+			// console.log(typeof j);
+			document.write(" Name = "+peoples[j].name + "\/ Age =" + peoples[j].age + "<br/>" );
+		}
+
+		document.write("<hr/>");
+
+		// For In Loop
+
+		// for(key in array){
+		// 	code to executed;
+		// }
+		
+		document.write("<h3>For In Loop</h3>");
+
+		// for in loop with object
+
+		let students = {
+			name:"Aung Aung",
+			city:"Mandalay",
+			parent:"U Ba"
+		};
+
+		// console.log(students);
+		// console.log(students.city);
+
+		for(key in students){
+			// console.log(key);
+			// console.log(typeof key);
+
+			// console.log(students);
+			// console.log(students.name);
+
+			// console.log(students[key]);
+
+			document.write(key + " is " +students[key]+ " <br/> ");
+		}
+
+		// 6.forEach loop
+		// mainarrays.forEach(function(value,index,array){
+		// 	code to be executed;
+		// });
+
+		document.write('<h3>forEach Loop</h3>');
+		let arrcolorones = ['red','green','black','grey','blue','pink'];
+
+		arrcolorones.forEach(function(arrcolorone){
+			console.log(arrcolorone);
+		});
+
+		arrcolorones.forEach(function(arrcolorone,idx){
+			document.write('index key is ' +idx+ "Color is "+arrcolorone+ '<br/>');
+		});
+
+		arrcolorones.forEach(function(arrcolorone,idx,arr){
+			console.log('index key is ' +idx+ "Color is "+arrcolorone);
+			console.log(arr);
+		});
+
+		// 7.Map
+		document.write('<h3>Map</h3>');
+
+		let visitors =['paing sis','m zaw naw','june','htet aung kyaw'];
+
+		visitors.forEach(function(name){
+			console.log(`for each result = Mr.${name}`);
+		});
+
+		visitors.map(function(name){
+			console.log(`map result = Mr.${name}`);
+		});
+
+		let guys = visitors.map(function(name){
+			return `${name}`;
+		});
+
+		console.log(guys);
+
+		let myguys = visitors.forEach(function(name){
+			return `${name}`;
+		});
+
+		console.log(myguys);
+
+
+
+
+	</script>
+
+</body>
+</html>

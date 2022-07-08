@@ -1,0 +1,21 @@
+/*.paragraph1::first-line{
+	color:red;
+	font-size:30px;
+}*/
+
+/*.paragraph1::before{
+	content:"Aung Aung "
+}*/
+
+/*.paragraph1::after{
+	content:"Mg Mg "
+}*/
+
+.paragraph1::first-letter{
+	color:red;
+	font-size:30px;
+}
+
+.paragraph1::selection{
+	background-color:orange;
+}

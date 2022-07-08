@@ -1,0 +1,57 @@
+@font-face{
+	font-family:stick;
+	src:local('Stick-Regular'),url('../libs/fonts/stick/Stick-Regular.ttf')format('woff');
+}
+
+a{
+	color:yellow;
+}
+
+body{
+	background-image:url('../img/homework4.jpg');
+	background-repeat:no-repeat;
+	color:white;
+	font-family:Times New Roman;
+}
+
+h1{
+	text-shadow:-6px -2px 0px black;
+	text-align:center;
+}
+
+legend{
+	color:yellow;
+	font-family:stick;
+	text-align:right;
+}
+
+.box{
+	width:335px;
+	height:310px;
+	margin-left:480px;
+	text-align:center;
+	border:1px dotted white;
+	background-color:#ffffff20;
+}
+
+h2{
+		text-shadow:-7px -3px 2px black;
+}
+
+label{
+	font-size:18px;
+	text-shadow:-5px -2px 2px black;
+}
+
+.password{
+	margin:3px 0px 3px 4px;
+}
+
+.cancel{
+	margin-left:130px;
+}
+
+p{
+	text-align:justify;
+	font-size:17px;
+}

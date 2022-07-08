@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Home Work 3</title>
+</head>
+
+<body>
+	<center>
+		<img src="https://worldnewsn.s3.amazonaws.com/media/images/UEC_june19.jpg" width="150px" height="150px" />
+		<h2><u>Welcome To 2020 Election</u></h2>
+		<p>Citizen ID: WDF(5656)</p>
+	<hr/>
+
+	<form action="" method="">
+
+	<table border="1">
+		<thead>
+			<tr bgcolor="yellow">
+				<th colspan="2">Election Form</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td><label for="ldrname">Leader Name:</label></td>
+				<td><input type="text" name="ldrname" id="ldrname" class="" placeholder="Enter Leader Name" minlength="3" maxlength="20" required /></td>
+			</tr>
+
+			<tr>
+				<td><label for="name">Your Name:</label></td>
+				<td><input type="text" name="name" id="name" class="" placeholder="Enter Your Name" minlength="2" maxlength="15" required /></td>
+			</tr>
+
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="email" name="email" id="email" class="" placeholder="Enter Your Email" required /></td>
+			</tr>
+
+			<tr>
+				<td><label for="password">Passcode:</label></td>
+				<td><input type="password" name="password" id="password" class="" placeholder="Enter Your Passcode" minlength="6" maxlength="15" required /></td>
+			</tr>
+
+			<tr>
+				<td><label>Parties:</label></td>
+				<td>
+					<input type="radio" name="party" id="nld" class="" value="1" required /><label for="nld">NLD</label>
+					<input type="radio" name="party" id="usdp" class="" value="2" required /><label for="usdp">USDP</label>
+					<input type="radio" name="party" id="ppp" class="" value="3" required /><label for="ppp">PPP</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label>Location:</label></td>
+				<td>
+					<select name="city" id="city" class="">
+						<option selected disabled>Choose City</option>
+						<option value="1">Mandalay</option>
+						<option value="2">Yangon</option>
+						<option value="3">Naypyitaw</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input type="checkbox" name="accept" id="accept" class="" checked /><label for="accept">I accept all the regulation of election community.</label></td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td colspan="2" align="right">
+					<button type="reset" name="reset" id="reset" class="">Cancel</button>
+					<button type="submit" name="submit" id="submit" class="">Submit</button>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	</form>
+	<hr/>
+
+	<small>Already Register? <a href="#">Click Here to Login</a></small>
+
+	</center>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.container .circle1{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		yellow,
+		red,
+		green,
+		blue);
+}
+
+.container .circle2{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		#3eb348,
+		#53b583,
+		#57b59f);
+}
+
+.container .circle3{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		rgba(119,142,127,1.00),
+		rgba(218,232,127,1.00),
+		rgba(64,34,127,1.00)
+		);
+}
+
+.container .circle4{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		red 25%,
+		yellow 0 60%,
+		blue 0 90%,
+		green 0 100%
+		);
+}
